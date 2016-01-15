@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/create.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div id="container">
+        <div id="ios_header">
+                <!-- This is the default navigation bar --> 
+                <div id="system_bar">
+                    <img src="img/iphone_bar.png">
+                </div>
+                <div class="toolbar">
+                    <a id="hamburger" href=""><i class="fa fa-bars fa-lg"></i></a>
+                    <a href="index.html"><img id="logo" src="img/logo.png"></a>
+                    <!-- <h1 style="color: #ccc"> ugh  </h1> -->
+                    <!-- <img id="another_widget" src=""> -->
+                </div> 
+
+               
+            </div>
+        <div id="page">
+            <div id="party_name">
+                <h2 contentEditable="true" class="bold">Add a Party Name</h2>
+                <i id="edit_party_name" class="fa fa-pencil fa-lg"></i>
+            </div>
+            <div id="party_description">
+                <p contentEditable="true">Enter a party description...</p>
+                <i id="edit_party_description" class="fa fa-pencil fa-lg"></i>
+            </div>
+            <div id="party_settings">
+
+                <div class="add" id="add_genres">
+                    <h3>Add Genre:</h3>
+                    <div class="box">
+                      <div class="container-1">
+                          <span class="icon"><i class="fa fa-search"></i></span>
+                          <input type="search" class="search" id="search_genres"/>
+                      </div>
+                  </div>
+                  <div id="tags"></div>
+              </div>
+              <div class="add" id="add_friends">
+                <h3>Add Friends: </h3>
+                <div class="box">
+                  <div class="container-1">
+                      <span class="icon"><i class="fa fa-search"></i></span>
+                      <input type="search" class="search" id="search_friends"/>
+                  </div>
+              </div>
+              <div id="tags"></div>
+
+          </div>
+          <div id="privacy">
+            <form action="">
+                <input checked type="radio" name="privacy" value="public">Public
+                <input type="radio" name="privacy" value="private">Private
+            </form>
+        </div>
+    </div>
+</div>
+<div id="footer_dialog">
+    <h2 id="create_button"><!-- Blank -->
+      <a href="party_page.html">Create Party</a></h2>
+    <h2 id="cancel"><a href="index.html">Cancel</a></h2>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="js/create.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
+</html>

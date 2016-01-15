@@ -1,0 +1,433 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#party-page {
+  color: #8E8E93;
+}
+#party-page #container {
+  margin-bottom: 0;
+}
+#party-page #page {
+  padding: 0;
+  margin-top: 5em;
+}
+#party-page #ios_header{
+    z-index: 1000;
+}
+
+
+
+#party-page #page #party_description{
+  background-color: #EBEBEB;
+  padding: 1em 2em 2em 2em;
+  display: none;
+}
+#party-page #page #party_description p{
+  padding-top: 0px;
+  size:9em;
+}
+#party-page #page #party_description h3{
+  color: #1CD6AB;
+  font-size: 1.8rem;
+  margin-bottom: .3rem;
+}
+#party-page #page #party_description h4{
+  margin-bottom: 5px;
+}
+#party-page #page #party_description .friends_list{
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin-top: 10px;
+}
+#party-page #page #party_description .friends_list li{
+  display: inline-block;
+  margin-right: 25px;
+  text-align: center;
+}
+#party-page #page #party_description .friends_list li .placeholder_image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+#party-page #page #party_description .friends_list li .name{
+  font-size: .8em;
+}
+#party-page #page #song_list {
+    display: block;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+#party-page #page #song_list #play_bar {
+    height: 5px;
+    width: 60%;
+    background-color: #1CD6AB;
+}
+#party-page #page #song_list li {
+    border-bottom: 1px solid #ccc;
+}
+#party-page #page #song_list {
+    margin-bottom: 6em;
+}
+
+#party-page #page #song_list #current_song {
+    background-color: #f7f7f7;
+}
+#party-page #page #song_list .song {
+    height: 5em;
+    padding: 2em 2em 2em 8em;
+    position: relative;
+}
+#party-page #page #song_list .song img {
+    width: 5em;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+#party-page #page #song_list .song h1 {
+    color: #1CD6AB;
+    margin-top: 1em;
+    font-size: 1em;
+    padding-right: 4em;
+}
+#party-page #page #song_list .song h3 {
+    font-size: .6em;
+    padding-right: 4em;
+}
+#party-page #page #song_list .song .voting {
+    height: 5em;
+    width: 4em;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    text-align: center;
+}
+#party-page #page #song_list #current_song .song .voting {
+    height: 5em;
+    width: 4em;
+    position: absolute;
+    top: 3em;
+    right: 2em;
+    text-align: center;
+    color: #1CD6AB;
+}
+#party-page #page #song_list #current_song .song .voting i {
+    font-size: 3em;
+}
+#party-page #page #song_list .song .arrow {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: .5em 0;
+}
+#party-page #page #song_list .song .green {
+    color: #1CD6AB;
+}
+#party-page #page #add_song {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+    background-color: #1CD6AB;
+    font-size: 1.5em;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+}
+
+#party-page img#addfriend {
+  float:right;
+  padding-right: .5em;
+} 
+
+#party-page .toolbar #info {
+  float:right;
+  padding: .5em .75rem 0 0;
+  font-size: 1.75em;
+} 
+
+#party-page .toolbar #info i{
+  color: #8E8E93;
+}
+
+#party-page .toolbar #info i.active {
+  color: #1CD6AB;
+  }
+
+/*#party-page .just-added {
+  background-color: blue;
+}*/
+/*
+#party-page .white-again {
+  
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}*/
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

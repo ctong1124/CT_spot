@@ -1,0 +1,184 @@
+#ios_header > h1 {
+	color: #ccc;
+}
+
+div.add {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: .5em;
+}
+
+div.add > div.box {
+	float: right;
+	width: 55%;
+}
+
+div#party_name > h2 {
+   color: #1CD6AB;
+   display: inline-block;
+   color: ;
+}
+
+div#party_name > i {
+	color: #ccc;
+   cursor: pointer;
+}
+
+div#party_description > p {
+	color: #4f5b66;
+	display: inline-block;
+}
+
+div#party_description > i {
+	color: #ccc;
+	cursor: pointer;
+}
+
+div#party_settings {
+    padding-top: 1em;
+}
+
+/** PRIVACY **/
+div#privacy {
+	display: inline-block;
+}
+
+div#privacy > h3 {
+	float: left;
+}
+
+div#privacy > form {
+	float: left;
+	color: #4f5b66;
+}
+
+/** GENRES **/
+div#add_genres {
+
+}
+
+div#add_genres > h3 {
+	width: 120px;
+	float: left;
+	color: #4f5b66;
+}
+
+div#add_genres > div.box {
+}
+
+/** ADD FRIENDS **/
+
+div#add_friends {
+}
+
+div#add_friends > h3 {
+	width: 105px;
+	float: left;
+	color: #4f5b66;
+}
+
+div#add_friends > div.box {
+}
+
+div#tags {
+	display: inline-block;
+    clear: both;
+    margin-top: .5em;
+}
+
+div#tags > div.a_tag {
+    float: left;
+    background-color: #ccc;
+    margin-right: 5px;
+    color: white;
+    border-radius: 5px;
+    padding: 0 5px;
+    margin-top: 5px;
+}
+
+div#tags > div.a_tag > p {
+	display: inline-block;
+}
+
+div#tags > div.a_tag > i {
+    float: right;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+/* SEARCH BOXES */
+.container-1{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.container-1 input.search {
+    height: 24px;
+    width: 100%;
+    background: white;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 3px solid #4f5b66;
+}
+
+.container-1 input.search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-1 input.search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-1 input.search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-1 input.search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.container-1 .icon{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+#footer_dialog {
+    width: 90%;
+    margin: auto;
+    position: fixed;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+
+#footer_dialog > h2 {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 0 .75em;
+}
+
+#create_button {
+	background-color: #1CD6AB;
+}
+
+#create_button > a {
+	text-decoration: none;
+	color: white;
+}
+
+#cancel {
+	background-color: #ccc;
+}
+
+#cancel > a{
+	text-decoration: none;
+	color: white;
+}

@@ -110,7 +110,7 @@ textarea {
 
 #search-page .searchbar {
     position: relative;
-    height: 6em;
+    height: 4em;
     background-color: white;
     border-bottom: .1em solid #ccc;
     margin-top: 5em;
@@ -165,7 +165,7 @@ textarea {
     margin: 0 0 0 1em;
     padding: .5em 0;
     list-style: none;
-    display: flex;
+    display: none;
 }
 
 #search-page ul.tabs li{
@@ -241,7 +241,7 @@ textarea {
 
 
 #search-page .entry .info {
-    width: 65%;
+    width: 63%;
     /*padding: .75em 0 .75em .75em;*/
     position: relative;
     padding-left: .75em;
@@ -302,6 +302,7 @@ textarea {
     -webkit-border-radius:50% ;
     border-radius: 50%;
     border: 2px solid #1CD6AB;
+    cursor: pointer;
 }
 
 #search-page .artist-page {
@@ -353,7 +354,7 @@ textarea {
 
 
 #search-page .song-entry {
-  height: 1.5em;
+  height: 1.25em;
   position: relative;
   padding: 1em 0 1em 1em;
 }

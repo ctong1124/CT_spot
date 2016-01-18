@@ -76,59 +76,39 @@
 }
 #joinpartypage #page #parties .party{
   padding: 1em 1em;
-  height: 4em;
   border-bottom: 1px solid #ccc;
   position: relative;
 }
 #joinpartypage #page #parties .party:hover{
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
-
-#joinpartypage #page #parties .party .party-name {
-  width: 85%;
-  float: left;
-  position: relative;
-}
-
-#joinpartypage #page #parties .party .party-name h1{
+#joinpartypage #page #parties .party h1{
   color: #1CD6AB;
   font-size: 1.3em;
- 
+  width: 80%;
 }
 
-#joinpartypage .ver-align {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-#joinpartypage #page #parties .party .party-name h3 {
+#joinpartypage #page #parties .party h3{
   font-size: 1em;
-  
+  width: 80%;
 }
 
 #joinpartypage #page #parties .party h4{
   font-size: .9em;
   font-weight: 300;
 }
-#joinpartypage #page #parties .party i {
- /* position: absolute;
+#joinpartypage #page #parties .party .info_icon{
+  position: absolute;
   right: 25px;
   bottom: 20px;
   height: 20px;
-  width: 20px;*/
-  color: #8E8E93;
-  padding: .75em 0;
-  font-size: 1.75em;
+  width: 20px;
+  padding: 0 4px 8px 4px;
+  color: #1CD6AB;
+  font-size: 1.3em;
   text-align: center;
   float: right;
 }
-#joinpartypage #page #parties .party .expanded_information {
-  height: 10em;
-  display: none;
-}
-
 #joinpartypage #page #parties .party .expanded_information p{
   padding-top: 20px;
   size:9em;
@@ -167,9 +147,20 @@
   color: #8E8E93;
 }
 
+#joinpartypage .party i{
+  position: absolute;
+  right: 1em;
+  top: 1.25em;
+  /*height: 2em;*/
+  /*width: 2em;  */
+  color: #8E8E93;
+  float: right;
+  /*padding: 1em;*/
+  font-size: 1.5em;
 
+}
 
-#joinpartypage i.active {
+#joinpartypage .party i.active {
   color: #1CD6AB;
 }
 

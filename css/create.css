@@ -13,6 +13,10 @@ div.add > div.box {
 	width: 55%;
 }
 
+div#party_name {
+  padding: 1em 0 0 0;
+}
+
 div#party_name > h2 {
    color: #1CD6AB;
    display: inline-block;
@@ -20,17 +24,25 @@ div#party_name > h2 {
 }
 
 div#party_name > i {
-	color: #ccc;
-   cursor: pointer;
+	color: #8E8E93;
+  cursor: pointer;
+}
+
+i.fa-pencil {
+  size: .75em;
+}
+
+div#party_description {
+  padding-top: .25em;
 }
 
 div#party_description > p {
-	color: #4f5b66;
+	color: #8E8E93;
 	display: inline-block;
 }
 
 div#party_description > i {
-	color: #ccc;
+	color: #8E8E93;
 	cursor: pointer;
 }
 
@@ -41,6 +53,7 @@ div#party_settings {
 /** PRIVACY **/
 div#privacy {
 	display: inline-block;
+  padding-top: 1em;
 }
 
 div#privacy > h3 {
@@ -49,7 +62,11 @@ div#privacy > h3 {
 
 div#privacy > form {
 	float: left;
-	color: #4f5b66;
+	color: #8E8E93;
+}
+
+input.private {
+  margin-left: .5em;
 }
 
 /** GENRES **/
@@ -60,7 +77,7 @@ div#add_genres {
 div#add_genres > h3 {
 	width: 120px;
 	float: left;
-	color: #4f5b66;
+	color: #8E8E93;
 }
 
 div#add_genres > div.box {
@@ -74,7 +91,7 @@ div#add_friends {
 div#add_friends > h3 {
 	width: 105px;
 	float: left;
-	color: #4f5b66;
+	color: #8E8E93;
 }
 
 div#add_friends > div.box {
@@ -89,11 +106,14 @@ div#tags {
 div#tags > div.a_tag {
     float: left;
     background-color: #ccc;
-    margin-right: 5px;
+    margin: .25em .25em 0 0;
     color: white;
     border-radius: 5px;
-    padding: 0 5px;
-    margin-top: 5px;
+    padding: .25em .5em;
+}
+
+input[type="radio"] {
+  border: 1px solid gray;
 }
 
 div#tags > div.a_tag > p {
@@ -102,8 +122,7 @@ div#tags > div.a_tag > p {
 
 div#tags > div.a_tag > i {
     float: right;
-    margin-top: 2px;
-    margin-left: 3px;
+    margin: .2em 0 0 .5em;
 }
 
 /* SEARCH BOXES */
@@ -116,15 +135,18 @@ div#tags > div.a_tag > i {
 
 .container-1 input.search {
     height: 24px;
-    width: 100%;
-    background: white;
-    font-size: 10pt;
+    width: 85%;
+    /*background: white;*/
+    padding-left: 2em;
+    font-size: .75em;
     float: left;
+    background-color: #EBEBEB;
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
+    /*border: 1px solid #DDDDDD;*/
+    border: none;
     color: #63717f;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 3px solid #4f5b66;
 }
 
 .container-1 input.search::-webkit-input-placeholder {
@@ -144,10 +166,11 @@ div#tags > div.a_tag > i {
 }
 
 .container-1 .icon{
+  margin: .1em 0 0 .3em;
   position: absolute;
-  right: 0;
+  /*right: 0;*/
   z-index: 1;
-  color: #4f5b66;
+  color: #8E8E93;
 }
 
 #footer_dialog {

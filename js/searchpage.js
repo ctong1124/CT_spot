@@ -24,6 +24,8 @@ jQuery(document).ready(function($){
         $("#songs").addClass('current');
         $("li.tab-link").first().addClass('current');
         $("#recs").css('display','none');
+        $("#search-page ul.tabs").css('display', 'flex');
+        $("#search-page .searchbar").css('height', '6em')
         recs_gone_huh = 1;
     }
 

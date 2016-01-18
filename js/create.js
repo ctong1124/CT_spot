@@ -55,7 +55,7 @@ var availableFriends = [
 ];
 
 function addGenre(val) {
-  var result = '<div class="a_tag"><p>#' + val + '</p><i id="remove" class="fa fa-times"></i></div>'
+  var result = '<div class="a_tag"><p>' + val + '</p><i id="remove" class="fa fa-times"></i></div>'
 
   $('#add_genres > #tags').append(result);
 
@@ -107,6 +107,12 @@ $( "#search_genres" ).autocomplete({
   	var val = ui.item.value;
     ui.item.value = '';
   	addGenre(val);
+  },
+  response: function(event, ui) {
+    if (!ui.content.length) {
+      var noResult = { value:"",label:"No results found" };
+      ui.content.push(noResult);
+    }
   }
 });
 
@@ -116,7 +122,13 @@ $( "#search_friends" ).autocomplete({
   	var val = ui.item.value;
     ui.item.value = '';
   	addFriends(val);
+    }, 
+  response: function(event, ui) {
+    if (!ui.content.length) {
+      var noResult = { value:"",label:"No results found" };
+      ui.content.push(noResult);
     }
+  }
 });
 
 function getFriends() {

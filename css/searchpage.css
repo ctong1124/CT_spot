@@ -157,7 +157,7 @@ textarea {
 #search-page .container-1 .icon{
   position: absolute;
   margin: .4em 0 0 .5em;
-  z-index: 1;
+  /*z-index: 1;*/
   color: #4f5b66;
 }
 
@@ -383,7 +383,7 @@ textarea {
   z-index: 100;
 }
 #search-page #albums .entry {
-  z-index: 1;
+  /*z-index: 1;*/
   float: none;
 }
 

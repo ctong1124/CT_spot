@@ -185,9 +185,8 @@ jQuery(document).ready(function($){
                 discog[entry.album][i] = entry.song;
             }
         }
-        console.log(albums);
-        console.log(discog);
-        //return albums;
+        
+
 
         output = "<div class=\"exit-btn\"><h1 class=\"normal\">+</h1></div><h2>";
         output += a + "</h2>";

@@ -185,7 +185,7 @@ div#tags > div.a_tag > i {
 #footer_dialog > h2 {
 	display: inline-block;
 	border-radius: 5px;
-	padding: 0 .75em;
+	padding: .75em 1em;
 }
 
 #create_button {

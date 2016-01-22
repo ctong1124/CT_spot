@@ -207,57 +207,7 @@
         <script>
         $(window).ready(function(){
         
-            $('.fa-arrow-up').click(function(){
-                if ($(this).siblings('.fa-arrow-down').hasClass('green')) {
-                    var temp = $(this).siblings('span').data('votes')+2;
-                    $(this).siblings('span').data('votes', temp);
-                    $(this).siblings('span').html(temp);
-                } else {
-                    if($(this).hasClass('green')){
-                        var temp = $(this).siblings('span').data('votes')-1;
-                        $(this).siblings('span').data('votes', temp);
-                        $(this).siblings('span').html(temp);
-                    } 
-                    if ($(this).hasClass('grey')) {
-                        var temp = $(this).siblings('span').data('votes')+1;
-                        $(this).siblings('span').data('votes', temp);
-                        $(this).siblings('span').html(temp);
-                    } 
-                }
-                
-            });
-
-
-            $('.fa-arrow-down').click(function(){
-                if ($(this).siblings('.fa-arrow-up').hasClass('green')) {
-                    var temp = $(this).siblings('span').data('votes')-2;
-                    $(this).siblings('span').data('votes', temp);
-                    $(this).siblings('span').html(temp);
-                }
-                else {
-                    if ($(this).hasClass('green')){
-                        var temp = $(this).siblings('span').data('votes')+1;
-                        $(this).siblings('span').data('votes', temp);
-                        $(this).siblings('span').html(temp);
-                        console.log('add');
-                    } 
-                    if ($(this).hasClass('grey')) {
-                        var temp = $(this).siblings('span').data('votes')-1;
-                        $(this).siblings('span').data('votes', temp);
-                        $(this).siblings('span').html(temp);
-                        console.log('subtract');
-                    }
-                }
-                    
-
-            });
-
-             $('.arrow').click(function(){
-                  $(this).siblings('.green').addClass('grey');
-                  $(this).siblings('.green').removeClass('green');
-                  $(this).toggleClass('green');
-                  $(this).toggleClass('grey');
-            });
+            
 
         })
         </script>

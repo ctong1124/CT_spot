@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 
 
 	$(document).on("click", '.party .expanded_information a.green_button', function(){
-		// event.preventDefault();
+		event.preventDefault();
 
 		partyTitle = $(this).closest(".party").children(".party_name").html();
 		partyDescription = $(this).siblings(".party_description").html();
@@ -33,7 +33,7 @@ jQuery(document).ready(function($){
 		console.log(session);
 
 		sessionStorage.setItem('session', JSON.stringify(session));
-
+		window.location.replace("party_page.html");
 	    
 	});
 

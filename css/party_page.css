@@ -182,11 +182,11 @@ textarea {
 #party-page #page #song_list .song h1 {
     color: #1CD6AB;
     margin-top: 1em;
-    font-size: .8rem;
+    font-size: 1em;
     padding-right: 4em;
 }
 #party-page #page #song_list .song h3 {
-    font-size: .75rem;
+    font-size: .75em;
     padding-right: 4em;
 }
 #party-page #page #song_list .song .voting {
@@ -248,6 +248,12 @@ textarea {
 
 #party-page .toolbar #info i.active {
   color: #1CD6AB;
+}
+
+#party-page h1.nosongs {
+    color: #1CD6AB;
+    margin: 1rem 1.5rem;
+    font-size: 1.25em;
 }
 
 /*#party-page .just-added {

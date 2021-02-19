@@ -1,1 +1,3 @@
-# HCI_project
+Team project for a Human Computer Interaction Course, Northeastern University, 2014.
+
+Spot is the front-end prototype of a collaborative music playlist web application. It was designed for party-goers who can independently add songs to a playlist on their mobile device and downvote and upvote songs to determine what plays next. Spot was a group project for a Human-Computer Interaction course where the entire process of design, implementation and evaluation of the product was completed. In developing the site, techinques such as ethnographic study, requirements analysis, scenario-based design, paper prototyping, computer prototyping, usability analysis and evaluation were used to develop the user interface.
